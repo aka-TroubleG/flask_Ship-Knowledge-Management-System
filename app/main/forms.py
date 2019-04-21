@@ -1,10 +1,11 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, TextAreaField, BooleanField, SelectField,\
-    SubmitField
+from wtforms import StringField, TextAreaField, BooleanField, SelectField, \
+    SubmitField, FileField
 from wtforms.validators import DataRequired, Length, Email, Regexp
 from wtforms import ValidationError
 from flask_pagedown.fields import PageDownField
 from ..models import Role, User
+from flask_uploads import UploadSet
 
 class NameForm(FlaskForm):
     name = StringField('What is your name?', validators=[DataRequired()])
@@ -50,6 +51,22 @@ class EditProfileAdminForm(FlaskForm):
 class PostForm(FlaskForm):
     body = PageDownField("What's on your mind?", validators=[DataRequired()])
     submit = SubmitField('Submit')
+
+class VersionForm(FlaskForm):
+    file = FileField('上传船舶文件', validators=[DataRequired()])
+    submit = SubmitField('Submit')
+
+    # def validate_file(self, field):
+    #     """
+    #     验证文件的名字后缀是否合法
+    #     :param field: file
+    #     :return: None
+    #     """
+    #     if allowed_file(field.data.filename):
+    #         return
+    #     raise StopValidation('文件名后缀不合法！')
+
+
 
 class CommentForm(FlaskForm):
     body = StringField('Enter your comment', validators=[DataRequired()])

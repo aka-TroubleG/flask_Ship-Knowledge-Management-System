@@ -1,24 +1,59 @@
 from flask import render_template, redirect, url_for, abort, flash, request,\
     current_app, make_response
 from flask_login import login_required, current_user
+from flask_uploads import UploadNotAllowed
+
+from nlp.process import nlp
 from . import main
-from .forms import EditProfileForm, EditProfileAdminForm, PostForm,\
-    CommentForm
-from .. import db
-from ..models import Permission, Role, User, Post, Comment
+from .forms import EditProfileForm, EditProfileAdminForm, PostForm, \
+    CommentForm, VersionForm
+from .. import db, files
+from ..models import Permission, Role, User, Post, Comment, File
 from ..decorators import admin_required, permission_required
 
 
 
 @main.route('/', methods=['GET', 'POST'])
 def index():
-    form = PostForm()
-    if current_user.can(Permission.WRITE) and form.validate_on_submit():
-        post = Post(body=form.body.data,
-                    author=current_user._get_current_object())
-        db.session.add(post)
-        db.session.commit()
-        return redirect(url_for('.index'))
+    form = VersionForm()
+    # if current_user.can(Permission.WRITE) and form.validate_on_submit():
+    #     post = Post(body=form.body.data,
+    #                 author=current_user._get_current_object())
+    #     db.session.add(post)
+    #     db.session.commit()
+    #     return redirect(url_for('.index'))
+    if current_user.can(Permission.WRITE) and  form.validate_on_submit():
+        try:
+            filename = files.save(form.file.data)
+            path = str(str(current_app.config['UPLOADED_FILES_DEST']) + '\\' + filename)
+            test = nlp(path)
+            keywords = test.keyword_extraction()
+            seg = test.cut()
+            keyword1=keywords[0]
+            keyword2=keywords[1]
+            keyword3=keywords[2]
+            keyword4=keywords[3]
+            keyword5=keywords[4]
+            file = File(file_name=filename,
+                        keyword1=keyword1,
+                        keyword2=keyword2,
+                        keyword3=keyword3,
+                        keyword4=keyword4,
+                        keyword5=keyword5,
+                        seg="/".join(seg),
+                        author=current_user._get_current_object())
+            db.session.add(file)
+            db.session.commit()
+
+            # file_url = files.url(filename)
+            print(filename)
+            # print(file_url)
+        except UploadNotAllowed as e:
+            print(e)
+            flash('失败')
+        else:
+            return redirect(url_for('.index'))
+
     page = request.args.get('page', 1, type=int)
     show_followed = False
     if current_user.is_authenticated:
@@ -26,13 +61,13 @@ def index():
     if show_followed:
         query = current_user.followed_posts
     else:
-        query = Post.query
-    pagination = query.order_by(Post.timestamp.desc()).paginate(
+        query = File.query
+    pagination = query.order_by(File.timestamp.desc()).paginate(
         page, per_page=current_app.config['FLASKY_POSTS_PER_PAGE'],
         error_out=False)
-    posts = pagination.items
-    return render_template('index.html', form=form, posts=posts,
-                           show_followed=show_followed, pagination=pagination)
+    filess = pagination.items
+    return render_template('index.html', form=form,
+                           show_followed=show_followed, pagination=pagination,files=filess)
 
 
 @main.route('/user/<username>')

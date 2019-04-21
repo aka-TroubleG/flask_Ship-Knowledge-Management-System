@@ -91,6 +91,7 @@ class User(UserMixin, db.Model):
     last_seen = db.Column(db.DateTime(), default=datetime.utcnow)
     avatar_hash = db.Column(db.String(32))
     posts = db.relationship('Post', backref='author', lazy='dynamic')
+    files = db.relationship('File', backref='author', lazy='dynamic')
     followed = db.relationship('Follow',
                                foreign_keys=[Follow.follower_id],
                                backref=db.backref('follower', lazy='joined'),
@@ -296,3 +297,16 @@ class Comment(db.Model):
             tags=allowed_tags, strip=True))
 
 db.event.listen(Comment.body, 'set', Comment.on_changed_body)
+
+class File(db.Model):
+    __tablename__ = 'files'
+    id = db.Column(db.Integer, primary_key=True)
+    timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
+    file_name = db.Column(db.Text)
+    seg = db.Column(db.Text)
+    keyword1 = db.Column(db.String(64))
+    keyword2 = db.Column(db.String(64))
+    keyword3 = db.Column(db.String(64))
+    keyword4 = db.Column(db.String(64))
+    keyword5 = db.Column(db.String(64))
+    author_id = db.Column(db.Integer, db.ForeignKey('users.id'))

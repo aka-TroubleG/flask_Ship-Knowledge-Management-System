@@ -48,26 +48,24 @@ class EditProfileAdminForm(FlaskForm):
                 User.query.filter_by(username=field.data).first():
             raise ValidationError('Username already in use.')
 
-class PostForm(FlaskForm):
-    body = PageDownField("What's on your mind?", validators=[DataRequired()])
-    submit = SubmitField('Submit')
 
 class VersionForm(FlaskForm):
     file = FileField('上传船舶文件', validators=[DataRequired()])
     submit = SubmitField('Submit')
 
-    # def validate_file(self, field):
-    #     """
-    #     验证文件的名字后缀是否合法
-    #     :param field: file
-    #     :return: None
-    #     """
-    #     if allowed_file(field.data.filename):
-    #         return
-    #     raise StopValidation('文件名后缀不合法！')
+class single_KeywordForm(FlaskForm):
+    keyword = TextAreaField('keyword')
+    submit = SubmitField('Submit')
+
+class TitleForm(FlaskForm):
+    title = TextAreaField('title')
+    submit = SubmitField('Submit')
 
 
-
-class CommentForm(FlaskForm):
-    body = StringField('Enter your comment', validators=[DataRequired()])
+class KeywordForm(FlaskForm):
+    keyword1 = TextAreaField('keyword1', validators=[DataRequired()])
+    keyword2 = TextAreaField('keyword2', validators=[DataRequired()])
+    keyword3 = TextAreaField('keyword3', validators=[DataRequired()])
+    keyword4 = TextAreaField('keyword4', validators=[DataRequired()])
+    keyword5 = TextAreaField('keyword5', validators=[DataRequired()])
     submit = SubmitField('Submit')

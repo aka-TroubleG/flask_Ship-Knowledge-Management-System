@@ -10,18 +10,16 @@ class Config:
     MAIL_PORT = int(os.environ.get('MAIL_PORT', '587'))
     MAIL_USE_TLS = os.environ.get('MAIL_USE_TLS', 'true').lower() in \
         ['true', 'on', '1']
-    MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
-    MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
+    MAIL_USERNAME = os.environ.get('MAIL_USERNAME') or'yangyongqiang006'
+    MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD') or'St_144517'
     FLASKY_MAIL_SUBJECT_PREFIX = '[Flasky]'
     FLASKY_MAIL_SENDER = 'Flasky Admin <flasky@example.com>'
     FLASKY_ADMIN = os.environ.get('FLASKY_ADMIN') or '1198902827@qq.com'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
-    FLASKY_POSTS_PER_PAGE = 10
-    FLASKY_FOLLOWERS_PER_PAGE = 50
-    FLASKY_COMMENTS_PER_PAGE = 30
+    FLASKY_POSTS_PER_PAGE = 20
     UPLOADED_FILES_DEST = os.getcwd()+'\\files\\'  # 配置文件保存的目录，本参数必须设置；
     UPLOADED_FILES_ALLOW = ['pdf', 'txt', 'docx']  # 配置允许的扩展名，其他的都是不允许
-    # UPLOADED_FILES_DENY = ['html']  # 配置不允许的扩展名
+
 
     @staticmethod
     def init_app(app):

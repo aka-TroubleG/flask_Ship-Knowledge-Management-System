@@ -2,7 +2,7 @@
 {% import "bootstrap/wtf.html" as wtf %}
 {% import "_macros.html" as macros %}
 
-{% block title %}Flasky{% endblock %}
+{% block title %}海事船舶管理系统{% endblock %}
 
 {% block page_content %}
 <div class="page-header">
@@ -15,10 +15,10 @@
 </div>
 <div class="post-tabs">
     <ul class="nav nav-tabs">
-        <li{% if not show_followed %} class="active"{% endif %}><a href="{{ url_for('.show_all') }}">All</a></li>
-        {% if current_user.is_authenticated %}
-        <li{% if show_followed %} class="active"{% endif %}><a href="{{ url_for('.show_followed') }}">Followers</a></li>
-        {% endif %}
+        <li{% if not show_followed %} class="active"{% endif %}>文件列表</li>
+{#        {% if current_user.is_authenticated %}#}
+{#        <li{% if show_followed %} class="active"{% endif %}><a href="{{ url_for('.show_followed') }}">关注者</a></li>#}
+{#        {% endif %}#}
     </ul>
     {% include '_files.html' %}
 </div>

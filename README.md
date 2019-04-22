@@ -56,22 +56,22 @@ Flask使用**werkzeug**（一个WSGI实用程序库）来做路由分发。使�
 
 #### 4.1 结构说明
 
-/app:主要功能实现
-    /auth: 登陆注册功能，包括：表单功能、报错功能、路由功能
-    /main: 软件功能，包括：表单功能、报错功能、路由功能
-    /static:辅助文件，包括css、ico、js
-    /template:前端文件，包括html
-    models.py:数据库表，包括用户、角色、文件等数据库表
-/files:用户上传的文件路径
-/migrations:迁移仓库相关
-/nlp:自然语言处理相关
-    loader.py:读取文件
-    process.py:对文件内容进行分词、关键词提取、关键词权重度量
-/tests:软件测试相关
-/venv:pyhton虚拟环境
-config.py:Flask配置环境
-flasky.py:启动程序
-requirements.txt:相关依赖包 
+/app:主要功能实现  
+&nbsp;&nbsp;&nbsp;&nbsp;/auth: 登陆注册功能，包括：表单功能、报错功能、路由功能  
+&nbsp;&nbsp;&nbsp;&nbsp;/main: 软件功能，包括：表单功能、报错功能、路由功能  
+&nbsp;&nbsp;&nbsp;&nbsp;/static:辅助文件，包括css、ico、js  
+&nbsp;&nbsp;&nbsp;&nbsp;/template:前端文件，包括html  
+&nbsp;&nbsp;&nbsp;&nbsp;models.py:数据库表，包括用户、角色、文件等数据库表  
+/files:用户上传的文件路径  
+/migrations:迁移仓库相关  
+/nlp:自然语言处理相关  
+&nbsp;&nbsp;&nbsp;&nbsp;loader.py:读取文件  
+&nbsp;&nbsp;&nbsp;&nbsp;process.py:对文件内容进行分词、关键词提取、关键词权重度量  
+/tests:软件测试相关  
+/venv:pyhton虚拟环境  
+config.py:Flask配置环境  
+flasky.py:启动程序  
+requirements.txt:相关依赖包   
 
 #### 4.2 环境配置
 python3.7、pycharmIDE

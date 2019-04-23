@@ -76,16 +76,3 @@ requirements.txt:相关依赖包
 #### 4.2 环境配置
 python3.7、pycharmIDE
 
-#### 4.3 步骤
-1. 新建Flask项目，选择python虚拟环境venv。
-2. 将文件复制粘贴到新建项目中。IDE会自动下载requirements.txt中的依赖包。
-3. 初始化数据库。
-   1. 初始化迁移仓库。
-    'flask db init'
-   2. 使用迁移仓库新建数据库
-   (''')
-        set FLASK_APP=flasky.py
-        flask db migrate
-        flask db upgrade
-   (''')
-4. 运行项目

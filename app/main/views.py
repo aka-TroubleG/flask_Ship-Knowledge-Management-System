@@ -1,7 +1,7 @@
 import os
 
-from flask import render_template, redirect, url_for, abort, flash, request,\
-    current_app, make_response
+from flask import render_template, redirect, url_for, abort, flash, request, \
+    current_app, make_response, send_from_directory
 from flask_login import login_required, current_user
 from flask_uploads import UploadNotAllowed
 
@@ -204,6 +204,16 @@ def title_search():
 def file(id):
     file = File.query.get_or_404(id)
     return render_template('file.html', file=file)
+
+
+@main.route('/downloads_file/<int:id>', methods=['GET', 'POST'])
+@login_required
+def downloads_file(id):
+    file = File.query.get_or_404(id)
+    directory = current_app.config['UPLOADED_FILES_DEST']
+    filename = file.file_name
+    return send_from_directory(directory, filename, as_attachment=True)
+
 
 
 @main.route('/tree_search', methods=['GET', 'POST'])

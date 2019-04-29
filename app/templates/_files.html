@@ -9,14 +9,14 @@
         </div>
         <div class="post-content">
             <div class="post-date"> <b> {{ file.author.username }}</b>  {{ moment(file.timestamp).fromNow() }}</div>
-            <div class="post-author"><a href="{{ url_for('.user', username=file.author.username) }}">文件名称:{{ file.file_name }}</a></div>
+            <div class="post-author"><h4><b><a href="{{ url_for('.user', username=file.author.username) }}">文件名称:{{ file.file_name }}</a></b></h4></div>
             <div>
 
-                <h5><b>{{ file.keyword1 }} {{ file.keyword_weight1 }}</b></h5>
-                <h5><b>{{ file.keyword2 }} {{ file.keyword_weight2 }}</b></h5>
-                <h5><b>{{ file.keyword3 }} {{ file.keyword_weight3 }}</b></h5>
-                <h5><b>{{ file.keyword4 }} {{ file.keyword_weight4 }}</b></h5>
-                <h5><b>{{ file.keyword5 }} {{ file.keyword_weight5 }}</b></h5>
+                <h4><b>关键字：{{ file.keyword1 }} {{ file.keyword2 }} {{ file.keyword3 }} {{ file.keyword4 }} {{ file.keyword5 }}</b></h4>
+{#                <h5><b>{{ file.keyword2 }} {{ file.keyword_weight2 }}</b></h5>#}
+{#                <h5><b>{{ file.keyword3 }} {{ file.keyword_weight3 }}</b></h5>#}
+{#                <h5><b>{{ file.keyword4 }} {{ file.keyword_weight4 }}</b></h5>#}
+{#                <h5><b>{{ file.keyword5 }} {{ file.keyword_weight5 }}</b></h5>#}
             </div>
 {#            <div>{{ file.seg }}</div>#}
 
@@ -33,6 +33,11 @@
                 <a href="{{ url_for('.file', id=file.id) }}">
                     <span class="label label-default">文档详情</span>
                 </a>
+                {% if current_user == file.author %}
+                <a href="{{ url_for('.downloads_file', id=file.id) }}">
+                    <span class="label label-default">下载文档</span>
+                </a>
+                {% endif %}
 {#                <a href="{{ url_for('.post', id=file.id) }}#comments">#}
 {#                    <span class="label label-primary">{{ post.comments.count() }} Comments</span>#}
 {#                </a>#}

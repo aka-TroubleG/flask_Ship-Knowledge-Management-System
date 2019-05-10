@@ -10,9 +10,23 @@
 <div>
     {{ wtf.quick_form(form) }}
 </div>
+<div class="post-tabs">
+    <ul class="nav nav-tabs">
+        <li{% if not show_followed %} class="active"{% endif %}>文件列表</li>
+    </ul>
+{#    {% include '_files.html' %}#}
+    {% if files %}
+    {% include '_files.html' %}
+    {%  endif %}
+{#    {% endfor %}#}
+
+</div>
+{% if pagination %}
+
+{% endif %}
 {% endblock %}
 
 {% block scripts %}
 {{ super() }}
-{{ pagedown.include_pagedown() }}
 {% endblock %}
+

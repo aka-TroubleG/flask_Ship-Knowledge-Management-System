@@ -1,7 +1,7 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, TextAreaField, BooleanField, SelectField, \
     SubmitField, FileField
-from wtforms.validators import DataRequired, Length, Email, Regexp
+from wtforms.validators import DataRequired, Length, Email, Regexp, Required
 from wtforms import ValidationError
 from flask_pagedown.fields import PageDownField
 from ..models import Role, User
@@ -68,4 +68,14 @@ class KeywordForm(FlaskForm):
     keyword3 = TextAreaField('keyword3', validators=[DataRequired()])
     keyword4 = TextAreaField('keyword4', validators=[DataRequired()])
     keyword5 = TextAreaField('keyword5', validators=[DataRequired()])
+    submit = SubmitField('Submit')
+
+class modifycategoriesForm(FlaskForm):
+    category = SelectField('文档类别', validators=[Required()],
+                         choices=[('0', '航标处陆上备件仓库'), ('1', '防污染设备'), ('2', '自动化监测与遥控系统'), ('3', '压缩空气系统'),('4', '舱底水系统'),
+                                  ('5', '辅锅炉'),('6', '装卸货设备'),('7', '海水系统'),('8', '电力系统'),('9', '安全与应急设备'),
+                                  ('10', '柴油发电原动机'),('11', '生活设施'),('12', '舱体部分'),('13', '安全检查、日常检查'),
+                                  ('14', '滑油系统'),('15', '柴油机主机'),('16', '船舶推进与操纵系统'),
+                                  ('17', '通讯导航设备'),('18', '燃油设备'),('19', '冷藏空调通风系统'),('20', '维修工具'),
+                                  ('21', '淡水系统')])
     submit = SubmitField('Submit')

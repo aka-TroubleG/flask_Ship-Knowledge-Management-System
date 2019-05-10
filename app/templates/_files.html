@@ -8,7 +8,7 @@
 
         </div>
         <div class="post-content">
-            <div class="post-date"> <b> {{ file.author.username }}</b>  {{ moment(file.timestamp).fromNow() }}</div>
+            <div class="post-date"> <b>文档类别：{{ file.category }} | 下载量：{{ file.Downloads }} | 阅读量：{{ file.Read_num }} | {{ file.author.username }} |</b>  {{ moment(file.timestamp).fromNow() }}</div>
             <div class="post-author"><h4><b><a href="{{ url_for('.user', username=file.author.username) }}">文件名称:{{ file.file_name }}</a></b></h4></div>
             <div>
 
@@ -36,6 +36,12 @@
                 {% if current_user == file.author %}
                 <a href="{{ url_for('.downloads_file', id=file.id) }}">
                     <span class="label label-default">下载文档</span>
+                </a>
+                <a href="{{ url_for('.modify_categories', id=file.id) }}">
+                    <span class="label label-default">修改文档类别</span>
+                </a>
+                <a href="{{ url_for('.delete_files', id=file.id) }}">
+                    <span class="label label-danger">删除文档</span>
                 </a>
                 {% endif %}
 {#                <a href="{{ url_for('.post', id=file.id) }}#comments">#}

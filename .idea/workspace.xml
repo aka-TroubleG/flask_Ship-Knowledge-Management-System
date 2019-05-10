@@ -2,7 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9ae3e24-c951-4e62-989d-9403c5557ff6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/templates/modify_categories.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/uploadfile.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/main/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/_files.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/_files.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/file.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/file.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/keyword_search.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/keyword_search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/title_search.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/title_search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/tree_search.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/tree_search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/1231242123_13.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/1231242123_15.pdf" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,7 +30,7 @@
     <SUITE FILE_PATH="coverage/lihui_test2$process.coverage" NAME="process Coverage Results" MODIFIED="1555852740235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nlp" />
     <SUITE FILE_PATH="coverage/lihui_test2$fake.coverage" NAME="fake Coverage Results" MODIFIED="1555759050000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
     <SUITE FILE_PATH="coverage/lihui_test2$nlp.coverage" NAME="nlp Coverage Results" MODIFIED="1555851945778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nlp" />
-    <SUITE FILE_PATH="coverage/lihui_test2$Flask__flasky_py_.coverage" NAME="Flask (flasky.py) Coverage Results" MODIFIED="1557307895633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/lihui_test2$Flask__flasky_py_.coverage" NAME="Flask (flasky.py) Coverage Results" MODIFIED="1557499185945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -60,12 +75,12 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config.py">
+        <entry file="file://$PROJECT_DIR$/app/main/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="46" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="46" />
+            <state relative-caret-position="382">
+              <caret line="189" column="23" selection-start-line="189" selection-start-column="23" selection-end-line="189" selection-end-column="23" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -104,8 +119,23 @@
       <find>VersionForm</find>
       <find>init</find>
       <find>FLASKY_ADMIN</find>
+      <find>index</find>
+      <find>tree_search</find>
+      <find>prev</find>
+      <find>//</find>
+      <find>../images/</find>
+      <find>flex-next</find>
+      <find>validators</find>
+      <find>downloads_file</find>
       <find>UPLOADED_FILES_DEST</find>
+      <find>user</find>
+      <find>modifycategoriesForm</find>
+      <find>dele</find>
+      <find>download</find>
     </findStrings>
+    <replaceStrings>
+      <replace>./</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -114,11 +144,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app.py" />
-        <option value="$PROJECT_DIR$/tests/test_user_model.py" />
-        <option value="$PROJECT_DIR$/app/auth/__init__.py" />
-        <option value="$PROJECT_DIR$/app/auth/forms.py" />
-        <option value="$PROJECT_DIR$/app/fake.py" />
         <option value="$PROJECT_DIR$/app/templates/edit_post.html" />
         <option value="$PROJECT_DIR$/app/templates/followers.html" />
         <option value="$PROJECT_DIR$/app/auth/views.py" />
@@ -135,16 +160,12 @@
         <option value="$PROJECT_DIR$/app/templates/file_edit.html" />
         <option value="$PROJECT_DIR$/app/templates/files.html" />
         <option value="$PROJECT_DIR$/flasky.py" />
-        <option value="$PROJECT_DIR$/app/main/forms.py" />
         <option value="$PROJECT_DIR$/nlp/process.py" />
         <option value="$PROJECT_DIR$/app/templates/403.html" />
         <option value="$PROJECT_DIR$/app/templates/404.html" />
         <option value="$PROJECT_DIR$/app/templates/500.html" />
         <option value="$PROJECT_DIR$/app/templates/edit_file_keywords.html" />
         <option value="$PROJECT_DIR$/app/templates/edit_profile.html" />
-        <option value="$PROJECT_DIR$/app/templates/keyword_search.html" />
-        <option value="$PROJECT_DIR$/app/templates/title_search.html" />
-        <option value="$PROJECT_DIR$/app/templates/tree_search.html" />
         <option value="$PROJECT_DIR$/app/templates/auth/change_email.html" />
         <option value="$PROJECT_DIR$/app/templates/auth/change_password.html" />
         <option value="$PROJECT_DIR$/app/templates/auth/login.html" />
@@ -152,21 +173,33 @@
         <option value="$PROJECT_DIR$/app/templates/auth/reset_password.html" />
         <option value="$PROJECT_DIR$/app/templates/auth/unconfirmed.html" />
         <option value="$PROJECT_DIR$/app/templates/auth/email/confirm.txt" />
-        <option value="$PROJECT_DIR$/app/templates/index.html" />
         <option value="$PROJECT_DIR$/app/templates/auth/email/confirm.html" />
-        <option value="$PROJECT_DIR$/app/templates/base.html" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/app/templates/user.html" />
-        <option value="$PROJECT_DIR$/app/models.py" />
-        <option value="$PROJECT_DIR$/app/templates/file.html" />
-        <option value="$PROJECT_DIR$/app/templates/_files.html" />
         <option value="$PROJECT_DIR$/config.py" />
+        <option value="$PROJECT_DIR$/app/templates/test_index.html" />
+        <option value="$PROJECT_DIR$/app/templates/uploadfile.html" />
+        <option value="$PROJECT_DIR$/app/templates/Category_management.html" />
+        <option value="$PROJECT_DIR$/app/main/__init__.py" />
+        <option value="$PROJECT_DIR$/app/static/style.css" />
+        <option value="$PROJECT_DIR$/app/models.py" />
+        <option value="$PROJECT_DIR$/app/templates/modify_categories.html" />
+        <option value="$PROJECT_DIR$/app/main/forms.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/app/templates/keyword_search.html" />
+        <option value="$PROJECT_DIR$/app/templates/tree_search.html" />
+        <option value="$PROJECT_DIR$/app/templates/base.html" />
+        <option value="$PROJECT_DIR$/app/templates/title_search.html" />
+        <option value="$PROJECT_DIR$/app/templates/file.html" />
+        <option value="$PROJECT_DIR$/app/templates/index.html" />
+        <option value="$PROJECT_DIR$/app/templates/delete_files.html" />
+        <option value="$PROJECT_DIR$/app/templates/_files.html" />
         <option value="$PROJECT_DIR$/app/main/views.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="957" />
+    <option name="x" value="956" />
     <option name="y" value="30" />
     <option name="width" value="940" />
     <option name="height" value="1090" />
@@ -201,8 +234,7 @@
             <path>
               <item name="lihui_test2" type="b2602c69:ProjectViewProjectNode" />
               <item name="lihui_test2" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="files" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -390,7 +422,8 @@
       <workItem from="1556186796272" duration="940000" />
       <workItem from="1556193281081" duration="2055000" />
       <workItem from="1556534463098" duration="784000" />
-      <workItem from="1557306771419" duration="602000" />
+      <workItem from="1557306771419" duration="2985000" />
+      <workItem from="1557484812655" duration="13953000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;Add article content&quot;">
       <created>1555761585783</created>
@@ -457,18 +490,18 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67216000" />
+    <option name="totallyTimeSpent" value="83552000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="-7" width="1488" height="878" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16433567" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13776223" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3297587" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.39678285" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3994638" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.18096514" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.08579089" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.04021448" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -476,14 +509,14 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.04016064" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.6032172" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.5375335" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32867134" />
-      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.18461539" />
+      <window_info anchor="right" id="Database" order="4" weight="0.12027972" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17062937" />
@@ -523,68 +556,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="&quot;增加下载文件功能&quot;" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/templates/_posts.html" />
-    <entry file="file://$PROJECT_DIR$/app/templates/edit_post.html" />
-    <entry file="file://$PROJECT_DIR$/app/main/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/moderate.html" />
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/datastructures.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="278" column="8" selection-start-line="278" selection-start-column="8" selection-end-line="278" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/files.html" />
-    <entry file="das://ba3afd67-978d-490b-8c9b-b839eb4f295b/schema/main/table/roles">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nlp/loader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="13" column="31" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/static/favicon.ico">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nlp/process.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="40" column="23" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/_macros.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="28" column="14" lean-forward="true" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/403.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/404.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -600,27 +571,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/edit_file_keywords.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/keyword_search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/title_search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/tree_search.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
@@ -687,13 +637,6 @@
     <entry file="file://$PROJECT_DIR$/app/templates/mail/new_user.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="44" lean-forward="true" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/auth/email/change_email.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -721,16 +664,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/main/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="51" column="17" selection-start-line="51" selection-start-column="6" selection-end-line="51" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/auth/email/change_email.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -752,13 +685,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/flasky.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -773,13 +699,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://ba3afd67-978d-490b-8c9b-b839eb4f295b/schema/main/table/files">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -826,44 +745,175 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/file.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="43" column="42" lean-forward="true" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="56" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/tag使用.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/_files.html">
+    <entry file="file://$PROJECT_DIR$/app/static/微信图片_20190508173837.jpg" />
+    <entry file="file://$PROJECT_DIR$/app/templates/test_index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="36" column="52" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="194">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
           <folding>
-            <element signature="e#0#29#0" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#1;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#2;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/main/views.py">
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/flask/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="207" lean-forward="true" selection-start-line="207" selection-end-line="207" />
+        <state relative-caret-position="136">
+          <caret line="1996" selection-start-line="1996" selection-end-line="1996" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/Category_management.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/main/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="77" column="49" lean-forward="true" selection-start-line="77" selection-start-column="49" selection-end-line="77" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/modify_categories.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/_macros.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="28" column="14" lean-forward="true" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="18" column="23" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="23" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.py">
+    <entry file="file://$PROJECT_DIR$/app/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="46" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="46" />
+        <state relative-caret-position="329">
+          <caret line="221" column="13" selection-start-line="221" selection-start-column="4" selection-end-line="221" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://ba3afd67-978d-490b-8c9b-b839eb4f295b/schema/main/table/files">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/uploadfile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="35" column="14" lean-forward="true" selection-start-line="16" selection-end-line="35" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/main/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="72" column="26" selection-start-line="72" selection-start-column="6" selection-end-line="72" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/keyword_search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="20" column="20" lean-forward="true" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="33" column="77" selection-start-line="33" selection-start-column="77" selection-end-line="33" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/tree_search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="21" lean-forward="true" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/title_search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/delete_files.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/scoping.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="79" column="19" selection-start-line="79" selection-start-column="15" selection-end-line="79" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/file.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="41" column="50" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/_files.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="36" column="71" lean-forward="true" selection-start-line="36" selection-start-column="71" selection-end-line="36" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/main/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="189" column="23" selection-start-line="189" selection-start-column="23" selection-end-line="189" selection-end-column="23" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
